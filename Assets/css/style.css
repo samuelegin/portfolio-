@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+:root{
+    --primary-color: rgb(29, 27, 27);
+    --secondary-color: #4f4432;
+    --white: #fff;
+    --gray: #dfdfdf;
+    --primary-font: 'kanit';
+}
+
+*{
+   padding: 0; 
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body{
+    background-color: var(--primary-color); 
+    margin: 1rem;
+}
+
+nav{
+    padding: 1.5rem;
+}
+
+i.bi-list{
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1.4rem;
+    color: var(--gray);
+    transition: ease-in-out 0s;
+    transform: rotate(360deg);
+    z-index: 10;
+}
+
+.navlinks {
+    background-color: rgba(0, 0, 0, 0.815);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+
+.navlinks a{
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    font-family: var(--primary-font);
+    color: var(--gray);
+    transition: ease-in 0s;
+    font-size: 1.5rem;
+}
+
+.navlinks a:hover{
+    transform: scale(1.3);
+}
+
+i.bi-x{
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1.4rem;
+    color: var(--gray);
+    transition: ease-in 1.5s;
+}
+
+.pages{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page{
+    display: none;
+}
+
+.page.active{
+    display: block;
+}
+
+/*===== Home page style====*/
+
+#home h1{
+    font-family: var(--primary-font);
+    font-size: 1.7rem;
+    color: var(--gray);
+}
+
+#home h2{
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    color: var(--gray);
+}
+
+.socials{
+    margin-top: 1rem;
+}
+
+.socials a{
+    color: var(--gray);
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+/*===== about page style====*/
+#about{
+    margin-top: 10rem;
+}
+
+.img-cont{
+    height: 20rem;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.img-cont img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.description{
+    font-family: var(--primary-font);
+    text-align: center;
+    color: var(--gray);
+}
+/*===== projects page style====*/
+#projects h1{
+    font-family: var(--primary-font);
+    color: var(--gray);
+    text-align: center;
+}
+
+/*===== skills page style====*/
+#skills{
+    height: 100vh;
+    margin: 0rem 1rem;
+}
+
+#skills h1{
+    font-family: var(--primary-font);
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    color: var(--gray);
+}
+
+.languages{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.languages img{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.technologies{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 1rem;
+}
+
+.technologies img{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.tools{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tools img{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+/*===== contact page style====*/
+#contact{
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+}
+
+#contact .socials{
+   min-height: 100vh;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+#contact .socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+#contact .socials i{
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+#contact .socials-main{
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+i.bi-facebook{
+  color: #316FF6;
+}
+i.bi-linkedin{
+  color: #0077b5;
+}
+i.bi-instagram{
+  color:  purple;
+}
+i.bi-telegram{
+ color: #0088CC;
+}
+i.bi-whatsapp{
+  color: #075E54;
+}
+i.bi-phone{
+  color: #615B29;
+}
+/*===== responsive design desktop view====*/
+@media screen and (min-width:768px) {
+    nav{
+        padding: 1rem;
+    }
+    .navlinks{
+        bottom: unset;
+        display: unset;
+        text-align: center;
+        background: none;
+        background-color: var(--primary-color);
+    }
+
+    .navlinks a{
+        display: inline-flex;
+        padding: 2rem;
+    }
+
+    .bi-list{
+        display: none;
+    }
+    .bi-x{
+        display: none;
+    }
+
+    .pages{
+        top: 6rem;
+    }
+
+    #about{
+        margin-top: unset;
+    }
+
+    #skills{
+        margin-top: 15vh;
+    }
+    
+    .img-aboutext{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .socials-main{
+        display: inline-flex;
+        justify-content: center;
+    }
+}
+
