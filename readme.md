@@ -18,4 +18,4 @@ I am a passionate Website developer with a dedication to buileding user friendly
 
 ## Contact
 
-Feel free to reach out! I am availale ia email at samuellegin53@gmail.com . Lets connect on LinkedIn/Facebook for more updates. 
+Feel free to reach out! I am availale ia email at samuelegin53@gmail.com . Lets connect on LinkedIn/Facebook for more updates. 

@@ -47,7 +47,6 @@ i.bi-list{
     justify-content: center;
     z-index: 2;
     transition: opacity 0.5s ease-in-out;
-    opacity: 0;
 }
 
 
